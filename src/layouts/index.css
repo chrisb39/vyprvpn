@@ -1,4 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+a, a:visited {
+  color: #1983E0;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.Hero {
+  height: 524px;
+  background: url('https://cl.ly/01240H2A3C08/bg_header.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.HeroGroup {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.Hero h1 {
+  margin: 0;
+  color: white;
+  line-height: 1.2;
+}
+
+.Hero p {
+  font-size: 1.5rem;
+  margin: 15px 0 50px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.8);
+}
+
+.Hero a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(90deg, #0565FA, #15AFFC);
+  padding: 20px 60px;
+  border-radius: 5px;
+  box-shadow: 0 4px 11px rgba(36,91,180,0.7);
 }
