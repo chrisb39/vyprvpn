@@ -21,10 +21,11 @@ a, a:visited {
 }
 
 .Hero {
-  height: 524px;
-  background: url('https://cl.ly/01240H2A3C08/bg_header.jpg');
+  height: 650px;
+  background: #110134 url('https://cl.ly/01240H2A3C08/bg_header.jpg');
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .HeroGroup {
@@ -38,22 +39,69 @@ a, a:visited {
   margin: 0;
   color: white;
   line-height: 1.2;
+  opacity: 0;
+  animation: HeroAnimation 2s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero p {
   font-size: 1.5rem;
-  margin: 15px 0 50px;
+  margin: 15px 0 30px;
   line-height: 1.5;
   color: rgba(255,255,255,0.8);
+  opacity: 0;
+  animation: HeroAnimation 2s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.Hero a {
+.Hero button {
   font-size: 1.1rem;
   font-weight: 600;
   color: white;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
   background: linear-gradient(90deg, #0565FA, #15AFFC);
   padding: 20px 60px;
   border-radius: 5px;
   box-shadow: 0 4px 11px rgba(36,91,180,0.7);
+  opacity: 0;
+  animation: HeroAnimation 2s 0.3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: .9s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero button:hover {
+  background: linear-gradient(90deg, rgb(0, 102, 255), rgb(0, 132, 255));
+  box-shadow: 0 4px 30px rgb(0, 31, 82);
+  transform: translateY(-3px) scale(1.02);
+}
+
+@media (max-width: 640px) {
+  .Hero {
+    height: 500px;
+  }
+  .HeroGroup {
+    padding: 100px 20px;
+  }
+  .Hero h1 {
+    font-size: 2.5rem;
+  }
+  .Hero p{
+    font-size: 1rem;
+  }
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

@@ -1,0 +1,33 @@
+.Header {
+    position: fixed;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 100;
+}
+
+.HeaderGroup {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Header a, .Header a:visited {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    .Header {
+        padding: 15px 0;
+    }
+    .HeaderGroup {
+        grid-template-columns: repeat(4,auto);
+    }
+    .Header a:nth-child(4),.Header a:nth-child(5) {
+        display: none;
+    }
+}
