@@ -48,7 +48,7 @@ a, a:visited {
   color: white;
   line-height: 1.2;
   opacity: 0;
-  animation: HeroAnimation 2s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation: HeroAnimation 2s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero p {
@@ -91,6 +91,11 @@ a, a:visited {
   justify-items: center;
   position: relative;
   top: -250px;
+}
+
+.Feature div:nth-child(1) {
+  opacity: 0;
+  animation: HeroAnimation 2s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Testimonial {
