@@ -28,6 +28,8 @@ const IndexPage = () => (
         <img src={require('../images/hero_devices.png')} width="1017" />
       </div>
       <div className="FeatureGroup">
+        <h2>Easy-to-use and trusted by millions.</h2>
+        <p>Duis mollis, est non number of devices, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
       </div>
     </div>
   </div>
