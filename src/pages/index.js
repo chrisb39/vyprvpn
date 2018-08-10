@@ -23,6 +23,13 @@ const IndexPage = () => (
         </svg>
       </div>
     </div>
+    <div className="Feature">
+      <div className="FeatureGroup">
+        <img src={require('../images/hero_devices.png')} width="1017" />
+      </div>
+      <div className="FeatureGroup">
+      </div>
+    </div>
   </div>
 )
 
