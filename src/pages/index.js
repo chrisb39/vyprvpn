@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Card from '../components/Card';
 
 const IndexPage = () => (
   <div>
@@ -35,6 +36,13 @@ const IndexPage = () => (
           <img src={require('../images/stars.svg')} width="93" />
         </div>
       </div>
+    </div>
+    <div className="Cards">
+      <h2>Control your connection.</h2>
+      <Card 
+        title="Protect Your Privacy"
+        text="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
+        image ="{require('../images/icon_security.svg')}" />
     </div>
   </div>
 )
