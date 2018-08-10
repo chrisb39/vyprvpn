@@ -6,6 +6,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   line-height: 1.3;
+  color: #212529;
 }
 
 h1 {
@@ -18,6 +19,7 @@ p {
   color: #6F767C;
   line-height: 1.5;
   font-size: 1.1rem;
+  margin: 0 0 1.2em;
 }
 
 a, a:visited {
@@ -91,10 +93,25 @@ a, a:visited {
   top: -250px;
 }
 
+.Testimonial {
+  background: #F8F9FA;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.Testimonial p {
+  color: #212529;
+  margin: 0 0 10px;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
 h2 {
   font-family: 'Open Sans Condensed';
   font-weight: 700;
   font-size: 3rem;
+  margin: 15px 0;
 }
 
 @media (max-width: 640px) {
