@@ -15,6 +15,13 @@ h1 {
   font-size: 4rem;
 }
 
+h3 {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin: 1rem 0;
+}
+
 p {
   color: #6F767C;
   line-height: 1.5;

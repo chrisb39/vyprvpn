@@ -39,10 +39,20 @@ const IndexPage = () => (
     </div>
     <div className="Cards">
       <h2>Control your connection.</h2>
-      <Card 
-        title="Protect Your Privacy"
-        text="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
-        image ="{require('../images/icon_security.svg')}" />
+      <div className="CardGroup">
+        <Card 
+          title="Protect Your Privacy"
+          text="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
+          image ={require('../images/icon_security.svg')} />
+          <Card 
+          title="Stream Global Content"
+          text="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
+          image ={require('../images/icon_streaming.svg')} />
+          <Card 
+          title="Bypass Censorship"
+          text="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
+          image ={require('../images/icon_bypass.svg')} />
+        </div>
     </div>
   </div>
 )
